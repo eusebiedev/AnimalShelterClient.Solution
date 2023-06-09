@@ -1,19 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
-using TravelClient.Models;
+using AnimalShelterClient.Models;
 
-namespace TravelClient.Controllers;
+namespace AnimalShelterClient.Controllers;
 
-public class CountriesController : Controller
+public class AnimalsController : Controller
 {
   public IActionResult Index()
   {
-    List<Country> countries = Country.GetCountries();
-    return View(countries);
+    List<Animal> animals = Animal.GetAnimals();
+    return View(animals);
   }
   public IActionResult Details(int id)
   {
-    Country country = Country.GetDetails(id);
-    return View(country);
+    Animal animal = Animal.GetDetails(id);
+    return View(animal);
   }
   public ActionResult Create()
   {
@@ -21,34 +21,34 @@ public class CountriesController : Controller
   }
 
   [HttpPost]
-  public ActionResult Create(Country country)
+  public ActionResult Create(Animal animal)
   {
-    Country.Post(country);
+    Animal.Post(animal);
     return RedirectToAction("Index");
   }
 
   public ActionResult Edit(int id)
   {
-    Country country = Country.GetDetails(id);
-    return View(country);
+    Animal animal = Animal.GetDetails(id);
+    return View(animal);
   }
 
   [HttpPost]
-  public ActionResult Edit(int id, Country country)
+  public ActionResult Edit(int id, Animal animal)
   {
-    Country.Put(country);
-    return RedirectToAction("Details", new { id = country.CountryId });
+    Animal.Put(animal);
+    return RedirectToAction("Details", new { id = animal.AnimalId });
   }
   public ActionResult Delete(int id)
   {
-    Country country = Country.GetDetails(id);
-    return View(country);
+    Animal animal = Animal.GetDetails(id);
+    return View(animal);
   }
 
   [HttpPost, ActionName("Delete")]
   public ActionResult DeleteConfirmed(int id)
   {
-    Country.Delete(id);
+    Animal.Delete(id);
     return RedirectToAction("Index");
   }
 }
