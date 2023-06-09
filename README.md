@@ -4,7 +4,7 @@
 
 ## Description
 
-An MVC Client front end which applictoin which consumes the Animal Shelter API. This application was built as part of the Further Exploration objective related of my independed code review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality.
+An MVC Client front end appliction which consumes the Animal Shelter API. This application was built as part of the Further Exploration objective related to my independed code review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality.
 
 ## Technologies Used
 
@@ -16,7 +16,6 @@ An MVC Client front end which applictoin which consumes the Animal Shelter API. 
 * Pomelo Entity Framework Core
 * EF Core Migrations
 * RestSharp
-* Swagger
 * MySQL
 * Javascript
 * Jquery
