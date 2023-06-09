@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TravelClient.Models;
+using AnimalShelterClient.Models;
 
-namespace TravelClient.Controllers;
+namespace AnimalShelterClient.Controllers;
 
 public class HomeController : Controller
 {
