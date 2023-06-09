@@ -2,27 +2,27 @@
   ViewData["Title"] = "Create Country";
 }
 
-@model TravelClient.Models.Country
+@model AnimalShelterClient.Models.Animal
 
-<h4>Add a new country to the Travel Blog:</h4>
+<h4>Add a new animal to the shelter's database:</h4>
 
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
   <br>
-  @Html.LabelFor(model => model.Language)
-  @Html.TextBoxFor(model => model.Language)
+  @Html.LabelFor(model => model.Species)
+  @Html.TextBoxFor(model => model.Species)
   <br>
-  @Html.LabelFor(model => model.Climate)
-  @Html.TextBoxFor(model => model.Climate)
+  @Html.LabelFor(model => model.Breed)
+  @Html.TextBoxFor(model => model.Breed)
   <br>
-  @Html.LabelFor(model => model.Population)
-  @Html.TextBoxFor(model => model.Population)
+  @Html.LabelFor(model => model.Age)
+  @Html.TextBoxFor(model => model.Age)
   <br>
   <br>
-  <input type="submit" value="Add new country" class="btn btn-primary"/>
+  <input type="submit" value="Add new animal" class="btn btn-primary"/>
 }
 
 <br>
-<p>@Html.ActionLink("Back to all countries", "Index")</p>
+<p>@Html.ActionLink("Back to all animals", "Index")</p>
