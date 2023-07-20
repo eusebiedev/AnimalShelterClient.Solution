@@ -4,7 +4,7 @@
 
 ## Description
 
-An MVC Client front end appliction which consumes the Animal Shelter API. This application was built as part of the Further Exploration objective related to my independed code review project: Build an API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality.
+An MVC Client front end application which consumes the Animal Shelter API, linked below in the installation requirements section. This application was built as part of the further exploration objective related to my independent code review project: Build a custom API for a local animal shelter to list available cats and dogs, using C#/.NET technologies, with full CRUD functionality.
 
 ## Technologies Used
 
